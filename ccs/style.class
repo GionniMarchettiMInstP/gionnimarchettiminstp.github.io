@@ -1,1 +1,132 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f0f4;
+    color: #4c535d;
+}
+
+header {
+    background: #ffffff;
+    padding: 25px 0;
+}
+
+.header-container {
+    width: 900px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #4d5560;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #777f89;
+}
+
+.social-links a {
+    margin-right: 15px;
+    color: #777f89;
+    text-decoration: none;
+}
+
+nav {
+    background: #5c2947;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+main {
+    width: 900px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #5a6370;
+}
+
+.publication {
+    margin-bottom: 30px;
+}
+
+.publication h3 {
+    color: #6c7180;
+}
+
+.publication a {
+    color: #9b4d70;
+    text-decoration: none;
+    border: 1px solid #9b4d70;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+footer {
+    background: #30353a;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
